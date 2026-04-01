@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</scrip
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Guangzhou — Welcome</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="welcome-screen">
+    <div class="welcome-bg" style="background-image: url('images/bg.jpg');"></div>
+    <div class="welcome-overlay"></div>
+    <div class="welcome-content">
+      <div class="welcome-badge">Guangzhou, China</div>
+      <h1 class="welcome-title">Discover Guangzhou</h1>
+      <p class="welcome-desc">A city where 2,200 years of history meets the future. From the gleaming Canton Tower to ancient temples, from Michelin-starred dim sum to vibrant street markets — Guangzhou awaits your exploration.</p>
+      <div class="welcome-highlights">
+        <div class="welcome-highlight-item">
+          <h3>2,200+</h3>
+          <p>Years of History</p>
+        </div>
+        <div class="welcome-highlight-item">
+          <h3>UNESCO</h3>
+          <p>City of Gastronomy</p>
+        </div>
+        <div class="welcome-highlight-item">
+          <h3>16</h3>
+          <p>Metro Lines</p>
+        </div>
+        <div class="welcome-highlight-item">
+          <h3>200+</h3>
+          <p>Flights Daily</p>
+        </div>
+      </div>
+      <div class="welcome-tags">
+        <span class="welcome-tag">Cantonese Cuisine</span>
+        <span class="welcome-tag">Pearl River</span>
+        <span class="welcome-tag">Canton Tower</span>
+        <span class="welcome-tag">Lingnan Culture</span>
+        <span class="welcome-tag">Dim Sum</span>
+        <span class="welcome-tag">Baiyun Mountain</span>
+      </div>
+      <button class="welcome-button" id="yesBtn">Start Exploring</button>
+      <p class="welcome-hint">Click to enter the website</p>
+      <p class="welcome-email"><a href="mailto:i25031447@student.newinti.edu.my">i25031447@student.newinti.edu.my</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('yesBtn').addEventListener('click', function() {
+      var screen = document.querySelector('.welcome-screen');
+      screen.classList.add('fade-out');
+      setTimeout(function() {
+        window.location.href = 'index2.html';
+      }, 600);
+    });
+  </script>
+</body>
+</html>
